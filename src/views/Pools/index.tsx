@@ -260,7 +260,7 @@ const Pools: React.FC = () => {
               mx="auto"
               mt="12px"
               src="/images/tianguis/simon-tanda.svg"
-              alt="Simon illustration"
+              alt="Simon!"
               width={666}
               height={666}
             />

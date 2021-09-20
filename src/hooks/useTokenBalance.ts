@@ -3,7 +3,7 @@ import { ethers } from 'ethers'
 import BigNumber from 'bignumber.js'
 import { useWeb3React } from '@web3-react/core'
 import tokens from 'config/constants/tokens'
-import { getBep20Contract, getCakeContract, getMorrallaContract } from 'utils/contractHelpers'
+import { getBep20Contract, getMorrallaContract } from 'utils/contractHelpers'
 import { BIG_ZERO } from 'utils/bigNumber'
 import { simpleRpcProvider } from 'utils/providers'
 import useRefresh from './useRefresh'
@@ -58,7 +58,7 @@ export const useTotalSupply = () => {
 
   useEffect(() => {
     async function fetchTotalSupply() {
-      const cakeContract = getCakeContract()
+      const cakeContract = getMorrallaContract()
       const supply = await cakeContract.totalSupply()
       setTotalSupply(new BigNumber(supply.toString()))
     }
@@ -77,7 +77,7 @@ export const useBurnedBalance = (tokenAddress: string) => {
 
   useEffect(() => {
     const fetchBalance = async () => {
-      const contract = getMorrallaContract(tokenAddress)
+      const contract = getMorrallaContract()
       const res = await contract.totalMorrallaBurned()
       setBalance(new BigNumber(res.toString()))
     }

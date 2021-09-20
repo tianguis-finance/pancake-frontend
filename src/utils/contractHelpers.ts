@@ -66,9 +66,11 @@ const getContract = (abi: any, address: string, signer?: ethers.Signer | ethers.
 export const getBep20Contract = (address: string, signer?: ethers.Signer | ethers.providers.Provider) => {
   return getContract(bep20Abi, address, signer)
 }
-export const getMorrallaContract = (address: string, signer?: ethers.Signer | ethers.providers.Provider) => {
-  return getContract(morrallaAbi, address, signer)
+
+export const getMorrallaContract = (signer?: ethers.Signer | ethers.providers.Provider) => {
+  return getContract(morrallaAbi, tokens.morralla.address, signer)
 }
+
 export const getErc721Contract = (address: string, signer?: ethers.Signer | ethers.providers.Provider) => {
   return getContract(erc721Abi, address, signer)
 }
@@ -93,9 +95,9 @@ export const getSouschefV2Contract = (id: number, signer?: ethers.Signer | ether
 export const getPointCenterIfoContract = (signer?: ethers.Signer | ethers.providers.Provider) => {
   return getContract(pointCenterIfo, getPointCenterIfoAddress(), signer)
 }
-export const getCakeContract = (signer?: ethers.Signer | ethers.providers.Provider) => {
+/* export const getCakeContract = (signer?: ethers.Signer | ethers.providers.Provider) => {
   return getContract(cakeAbi, tokens.cake.address, signer)
-}
+} */
 
 export const getProfileContract = (signer?: ethers.Signer | ethers.providers.Provider) => {
   return getContract(profileABI, getPancakeProfileAddress(), signer) as PancakeProfileContract

@@ -24,8 +24,8 @@ const farms: SerializedFarmConfig[] = [
       97: '',
       56: '0x2a8a0d9f3e18b27b9de5b04cca02f229c9745d18',
     },
-    token: serializedTokens.morralla,
-    quoteToken: serializedTokens.wbnb,
+    token: serializedTokens.wbnb,
+    quoteToken: serializedTokens.morralla,
   },
   {
     pid: 2,
@@ -34,8 +34,8 @@ const farms: SerializedFarmConfig[] = [
       97: '',
       56: '0x8E4b9AC4FA97530ECE7ddD477c2768F462684764',
     },
-    token: serializedTokens.morralla,
-    quoteToken: serializedTokens.busd,
+    token: serializedTokens.busd,
+    quoteToken: serializedTokens.morralla,
   },
   /**
    * V3 by order of release (some may be out of PID order due to multiplier boost)
@@ -57,8 +57,8 @@ const farms: SerializedFarmConfig[] = [
       97: '',
       56: '0x211cBcdD63D919CE33EeE83518801F2A3ea63faa',
     },
-    token: serializedTokens.morralla,
-    quoteToken: serializedTokens.xrp,
+    token: serializedTokens.xrp,
+    quoteToken: serializedTokens.morralla,
   },
   {
     pid: 6,
@@ -67,8 +67,8 @@ const farms: SerializedFarmConfig[] = [
       97: '',
       56: '0xBc0cf9dFC4A58e698F8198ad3A5621c027b5412D',
     },
-    token: serializedTokens.morralla,
-    quoteToken: serializedTokens.btcb,
+    token: serializedTokens.btcb,
+    quoteToken: serializedTokens.morralla,
   },
   {
     pid: 7,
@@ -77,8 +77,8 @@ const farms: SerializedFarmConfig[] = [
       97: '',
       56: '0x3678463a9805D7B4E59a61C9a3D52C9A6dB54fB0',
     },
-    token: serializedTokens.morralla,
-    quoteToken: serializedTokens.eth,
+    token: serializedTokens.eth,
+    quoteToken: serializedTokens.morralla,
   },
 
   {
@@ -88,8 +88,8 @@ const farms: SerializedFarmConfig[] = [
       97: '',
       56: '0x5709e5F67E4492742Ff46890A7107Fbb99CD096E',
     },
-    token: serializedTokens.morralla,
-    quoteToken: serializedTokens.ada,
+    token: serializedTokens.ada,
+    quoteToken: serializedTokens.morralla,
   },
   {
     pid: 9,
@@ -98,8 +98,8 @@ const farms: SerializedFarmConfig[] = [
       97: '',
       56: '0xcdC7497E6c4C9605af0a889FB800B9754d3f442c',
     },
-    token: serializedTokens.morralla,
-    quoteToken: serializedTokens.cake,
+    token: serializedTokens.cake,
+    quoteToken: serializedTokens.morralla,
   },
 ]
 

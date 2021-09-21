@@ -27,14 +27,16 @@ const LotteryCardContent = () => {
   const { slowRefresh } = useRefresh()
   const [lotteryId, setLotteryId] = useState<string>(null)
   const [currentLotteryPrize, setCurrentLotteryPrize] = useState<BigNumber>(null)
-  const cakePriceBusdAsString = usePriceCakeBusd().toString()
+  const morrallaPriceBusdAsString = usePriceCakeBusd().toString()
 
-  const cakePrizesText = t('%cakePrizeInUsd% in MORRALLA prizes this round', { cakePrizeInUsd: cakePriceBusdAsString })
-  const [pretext, prizesThisRound] = cakePrizesText.split(cakePriceBusdAsString)
+  const cakePrizesText = t('%cakePrizeInUsd% in MORRALLA prizes this round', {
+    cakePrizeInUsd: morrallaPriceBusdAsString,
+  })
+  const [pretext, prizesThisRound] = cakePrizesText.split(morrallaPriceBusdAsString)
 
-  const cakePriceBusd = useMemo(() => {
-    return new BigNumber(cakePriceBusdAsString)
-  }, [cakePriceBusdAsString])
+  const morrallaPriceBusd = useMemo(() => {
+    return new BigNumber(morrallaPriceBusdAsString)
+  }, [morrallaPriceBusdAsString])
 
   useEffect(() => {
     if (isIntersecting) {
@@ -58,14 +60,14 @@ const LotteryCardContent = () => {
     // get public data for current lottery
     const fetchCurrentLotteryPrize = async () => {
       const { amountCollectedInCake } = await fetchLottery(lotteryId)
-      const prizeInBusd = cakePriceBusd.times(amountCollectedInCake)
+      const prizeInBusd = morrallaPriceBusd.times(amountCollectedInCake)
       setCurrentLotteryPrize(prizeInBusd)
     }
 
     if (lotteryId) {
       fetchCurrentLotteryPrize()
     }
-  }, [lotteryId, slowRefresh, setCurrentLotteryPrize, cakePriceBusd])
+  }, [lotteryId, slowRefresh, setCurrentLotteryPrize, morrallaPriceBusd])
 
   return (
     <>

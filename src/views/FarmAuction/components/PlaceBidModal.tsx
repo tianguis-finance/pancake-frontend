@@ -67,7 +67,7 @@ const PlaceBidModal: React.FC<PlaceBidModalProps> = ({
   const { balance: userCake, fetchStatus } = useTokenBalance(tokens.morralla.address)
   const userCakeBalance = getBalanceAmount(userCake)
 
-  const cakePriceBusd = usePriceCakeBusd()
+  const morrallaPriceBusd = usePriceCakeBusd()
   const farmAuctionContract = useFarmAuctionContract()
   const cakeContract = useCake()
 
@@ -171,8 +171,8 @@ const PlaceBidModal: React.FC<PlaceBidModalProps> = ({
           value={bid}
           onUserInput={handleInputChange}
           currencyValue={
-            cakePriceBusd.gt(0) &&
-            `~${bid ? cakePriceBusd.times(new BigNumber(bid)).toNumber().toLocaleString() : '0.00'} USD`
+            morrallaPriceBusd.gt(0) &&
+            `~${bid ? morrallaPriceBusd.times(new BigNumber(bid)).toNumber().toLocaleString() : '0.00'} USD`
           }
         />
         <Flex justifyContent="flex-end" mt="8px">

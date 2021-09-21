@@ -14,13 +14,13 @@ const RecentCakeProfitCountdownRow = () => {
     pricePerFullShare,
     userData: { cakeAtLastUserAction, userShares, lastUserActionTime },
   } = useCakeVault()
-  const cakePriceBusd = usePriceCakeBusd()
+  const morrallaPriceBusd = usePriceCakeBusd()
   const { hasAutoEarnings, autoCakeToDisplay, autoUsdToDisplay } = getCakeVaultEarnings(
     account,
     cakeAtLastUserAction,
     userShares,
     pricePerFullShare,
-    cakePriceBusd.toNumber(),
+    morrallaPriceBusd.toNumber(),
   )
 
   const lastActionInMs = lastUserActionTime && parseInt(lastUserActionTime) * 1000

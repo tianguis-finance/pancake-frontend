@@ -27,9 +27,9 @@ export const mainnetTokens = {
     MAINNET,
     '0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82',
     18,
-    'MORRALLA',
-    'Tianguis finance',
-    'https://tianguis.finance',
+    'CAKE',
+    'PancakeSwap Token',
+    'https://pancakeswap.finance',
   ),
   morralla: new Token(
     MAINNET,

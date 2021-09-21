@@ -55,8 +55,8 @@ const CakeDataRow = () => {
   const totalSupply = useTotalSupply()
   const burnedBalance = getBalanceNumber(useBurnedBalance(tokens.morralla.address))
   const cakeSupply = totalSupply ? getBalanceNumber(totalSupply) - burnedBalance : 0
-  const cakePriceBusd = usePriceCakeBusd()
-  const mcap = cakePriceBusd.times(cakeSupply)
+  const morrallaPriceBusd = usePriceCakeBusd()
+  const mcap = morrallaPriceBusd.times(cakeSupply)
   const mcapString = formatLocalisedCompactNumber(mcap.toNumber())
 
   const morrallalogo = '/images/tianguis/morralla.svg'

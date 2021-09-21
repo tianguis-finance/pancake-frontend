@@ -69,7 +69,7 @@ export default function useBUSDPrice(currency?: Currency): Price | undefined {
   }, [chainId, currency, ethPair, ethPairState, busdEthPair, busdEthPairState, busdPair, busdPairState, wrapped])
 }
 
-export const useCakeBusdPrice = (): Price | undefined => {
+export const useMorrallaBusdPrice = (): Price | undefined => {
   const cakeBusdPrice = useBUSDPrice(tokens.morralla)
   return cakeBusdPrice
 }

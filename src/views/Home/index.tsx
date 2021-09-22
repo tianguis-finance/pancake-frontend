@@ -17,6 +17,7 @@ import Equipo from './components/Equipo'
 import Roadmap from './components/Roadmap'
 import { WedgeTopLeft, InnerWedgeWrapper, OuterWedgeWrapper, WedgeTopRight } from './components/WedgeSvgs'
 import UserBanner from './components/UserBanner'
+import TwitterFeedCard from './components/TwitterFeedCard'
 
 const StyledHeroSection = styled(PageSection)`
   padding-top: 0px;
@@ -141,6 +142,7 @@ const Home: React.FC = () => {
         hasCurvedDivider={false}
       >
         {/*  <SalesSection {...cakeSectionData} /> */}
+        <TwitterFeedCard />
         <CakeDataRow />
         <Roadmap />
         <Equipo />

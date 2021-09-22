@@ -28,7 +28,7 @@ export const mainnetTokens = {
     '0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82',
     18,
     'CAKE',
-    'PancakeSwap Token',
+    'Tianguis Finance Token',
     'https://pancakeswap.finance',
   ),
   morralla: new Token(
@@ -1666,7 +1666,7 @@ export const testnetTokens = {
     '0xa35062141Fa33BCA92Ce69FeD37D0E8908868AAe',
     18,
     'CAKE',
-    'PancakeSwap Token',
+    'Tianguis Finance Token',
     'https://tianguis.finance/',
   ),
   busd: new Token(

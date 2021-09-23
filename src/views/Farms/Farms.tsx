@@ -22,12 +22,14 @@ import PageHeader from 'components/PageHeader'
 import SearchInput from 'components/SearchInput'
 import Select, { OptionProps } from 'components/Select/Select'
 import Loading from 'components/Loading'
+import Container from 'components/Layout/Container'
 import FarmCard, { FarmWithStakedValue } from './components/FarmCard/FarmCard'
 import Table from './components/FarmTable/FarmTable'
 import FarmTabButtons from './components/FarmTabButtons'
 import { RowProps } from './components/FarmTable/Row'
 import ToggleView from './components/ToggleView/ToggleView'
 import { DesktopColumnSchema } from './components/types'
+import UserBanner from './components/UserBanner'
 
 const ControlContainer = styled.div`
   display: flex;
@@ -94,6 +96,16 @@ const ViewControls = styled.div`
       padding: 0;
     }
   }
+`
+const UserBannerWrapper = styled(Container)`
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  padding-left: 0px;
+  padding-right: 0px;
 `
 
 const StyledImage = styled(Image)`
@@ -382,6 +394,11 @@ const Farms: React.FC = () => {
         >
           {t('Farms')}
         </h1>
+        {/*    {account && (
+          <UserBannerWrapper>
+            <UserBanner />
+          </UserBannerWrapper>
+        )} */}
         {/*    <Heading scale="lg" color="text">
           {t('Stake LP tokens to earn.')}
         </Heading>

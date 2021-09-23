@@ -65,11 +65,6 @@ const Home: React.FC = () => {
         index={1}
         hasCurvedDivider={false}
       >
-        {/* {account && (
-          <UserBannerWrapper>
-            <UserBanner />
-          </UserBannerWrapper>
-        )} */}
         <Hero />
         <h1
           style={{
@@ -142,10 +137,15 @@ const Home: React.FC = () => {
         hasCurvedDivider={false}
       >
         {/*  <SalesSection {...cakeSectionData} /> */}
-        <TwitterFeedCard />
+        {/* {account && (
+          <UserBannerWrapper>
+            <UserBanner />
+          </UserBannerWrapper>
+        )} */}
         <CakeDataRow />
         <Roadmap />
         <Equipo />
+        <TwitterFeedCard />
       </PageSection>
       {/*   <PageSection
         innerProps={{ style: HomeSectionContainerStyles }}

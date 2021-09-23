@@ -4,6 +4,14 @@ import styled from 'styled-components'
 import HarvestCard from './HarvestCard'
 import UserDetail from './UserDetail'
 
+const StyledContainer = styled.div`
+  border: 2px solid yellow;
+  border-radius: 16px;
+  padding: 32px;
+  margin-bottom: 32px;
+  box-shadow: 0px 10px 30px 0px #008800;
+`
+
 const StyledCard = styled(Box)`
   border-bottom: 1px ${({ theme }) => theme.colors.secondary} solid;
   border-left: 1px ${({ theme }) => theme.colors.secondary} solid;
@@ -17,16 +25,20 @@ const StyledCard = styled(Box)`
 
 const UserBanner = () => {
   return (
-    <StyledCard p={['16px', null, null, '24px']}>
+    /*     <StyledCard p={['16px', null, null, '24px']}>
+     */
+    <StyledContainer>
       <Flex alignItems="center" justifyContent="center" flexDirection={['column', null, null, 'row']}>
-        <Flex flex="1" mr={[null, null, null, '32px']}>
+        {/* <Flex flex="1" mr={[null, null, null, '32px']}>
           <UserDetail />
-        </Flex>
+        </Flex> */}
         <Flex flex="1" width={['100%', null, 'auto']}>
           <HarvestCard />
         </Flex>
       </Flex>
-    </StyledCard>
+    </StyledContainer>
+    /*     </StyledCard>
+     */
   )
 }
 

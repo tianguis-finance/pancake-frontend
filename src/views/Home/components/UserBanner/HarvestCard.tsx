@@ -15,7 +15,12 @@ const StyledCard = styled(Card)`
   width: 100%;
   height: fit-content;
 `
-
+const StyledContainer = styled.div`
+  border: 2px solid yellow;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0px 10px 30px 0px #008800;
+`
 const HarvestCard = () => {
   const [pendingTx, setPendingTx] = useState(false)
   const { t } = useTranslation()

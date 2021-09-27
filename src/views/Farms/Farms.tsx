@@ -2,7 +2,7 @@ import React, { useEffect, useCallback, useState, useMemo, useRef } from 'react'
 import { Route, useRouteMatch, useLocation, NavLink } from 'react-router-dom'
 import BigNumber from 'bignumber.js'
 import { useWeb3React } from '@web3-react/core'
-import { Image, Heading, RowType, Toggle, Text, Button, ArrowForwardIcon, Flex } from '@pancakeswap/uikit'
+import { Image, Heading, RowType, Toggle, Text, Button, ArrowForwardIcon, Flex, Card } from '@pancakeswap/uikit'
 import { ChainId } from '@pancakeswap/sdk'
 import styled from 'styled-components'
 import FlexLayout from 'components/Layout/Flex'
@@ -29,9 +29,9 @@ import FarmTabButtons from './components/FarmTabButtons'
 import { RowProps } from './components/FarmTable/Row'
 import ToggleView from './components/ToggleView/ToggleView'
 import { DesktopColumnSchema } from './components/types'
-import UserBanner from './components/UserBanner'
+// import UserBanner from './components/UserBanner'
 
-const ControlContainer = styled.div`
+const ControlContainer = styled(Card)`
   display: flex;
   width: 100%;
   align-items: center;

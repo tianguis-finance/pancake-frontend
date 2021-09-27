@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Flex, Text, Heading, Skeleton, Image } from '@pancakeswap/uikit'
+import { Flex, Text, Heading, Skeleton, Image } from '@tianguis-finance/uikit'
 import tokens from 'config/constants/tokens'
 
 const StyledColumn = styled(Flex)<{ noMobileBorder?: boolean }>`

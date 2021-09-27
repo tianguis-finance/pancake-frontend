@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { Timeline } from 'react-twitter-widgets'
 
-import { Card, CardBody, Heading, Flex } from '@pancakeswap/uikit'
+import { Card, CardBody, Heading, Flex } from '@tianguis-finance/uikit'
 import { useTranslation } from 'contexts/Localization'
 
 const StyledCard = styled(Card)`

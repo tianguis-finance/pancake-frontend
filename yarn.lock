@@ -2511,18 +2511,6 @@
     tiny-warning "^1.0.3"
     toformat "^2.0.0"
 
-"@pancakeswap/uikit@^0.54.3":
-  version "0.54.3"
-  resolved "https://registry.yarnpkg.com/@pancakeswap/uikit/-/uikit-0.54.3.tgz#9db9555f133f514815c71b4f1bbbe27162d8c797"
-  integrity sha512-PwkVk8m7IU1b9tzov5yzUGgnev/tFBeRYWjNiDs5ccGcNJPnG+tl43mFqXcaKvn+P0fhGGJZbXdlsyV1tL4nQQ==
-  dependencies:
-    "@popperjs/core" "^2.9.2"
-    "@types/lodash" "^4.14.168"
-    "@types/styled-system" "^5.1.10"
-    lodash "^4.17.20"
-    react-popper "^2.2.5"
-    styled-system "^5.1.5"
-
 "@pmmmwh/react-refresh-webpack-plugin@0.4.3":
   version "0.4.3"
   resolved "https://registry.yarnpkg.com/@pmmmwh/react-refresh-webpack-plugin/-/react-refresh-webpack-plugin-0.4.3.tgz#1eec460596d200c0236bf195b078a5d1df89b766"
@@ -3192,6 +3180,18 @@
     "@textile/users-grpc" "2.6.6"
     event-iterator "^2.0.0"
     loglevel "^1.7.0"
+
+"@tianguis-finance/uikit@0.0.1":
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/@tianguis-finance/uikit/-/uikit-0.0.1.tgz#20ea8a800bfadf44ef75e21da2bbb3f7eb90f3e3"
+  integrity sha512-wz3HNy68NrbnQ1ZJ2BUJkH0DJkDPvdECSswxDTUG++jlZr6JlUk8cksPgyJHEtYvqep4r9QFNedTkTmZMGdMdQ==
+  dependencies:
+    "@popperjs/core" "^2.9.2"
+    "@types/lodash" "^4.14.168"
+    "@types/styled-system" "^5.1.10"
+    lodash "^4.17.20"
+    react-popper "^2.2.5"
+    styled-system "^5.1.5"
 
 "@tootallnate/once@1":
   version "1.1.2"

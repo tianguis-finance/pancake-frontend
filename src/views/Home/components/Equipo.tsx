@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Flex, Text, Heading, Skeleton, Image } from '@pancakeswap/uikit'
+import { Flex, Text, Heading, Skeleton, Image } from '@tianguis-finance/uikit'
 import { useTranslation } from 'contexts/Localization'
 import tokens from 'config/constants/tokens'
 

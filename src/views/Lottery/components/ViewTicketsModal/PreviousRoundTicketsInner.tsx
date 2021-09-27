@@ -11,7 +11,7 @@ import {
   InfoIcon,
   useTooltip,
   useModal,
-} from '@pancakeswap/uikit'
+} from '@tianguis-finance/uikit'
 import styled from 'styled-components'
 import { useWeb3React } from '@web3-react/core'
 import { LotteryTicket, LotteryTicketClaimData } from 'config/constants/types'

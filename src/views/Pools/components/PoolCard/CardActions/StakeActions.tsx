@@ -1,5 +1,15 @@
 import React from 'react'
-import { Flex, Text, Button, IconButton, AddIcon, MinusIcon, useModal, Skeleton, useTooltip } from '@pancakeswap/uikit'
+import {
+  Flex,
+  Text,
+  Button,
+  IconButton,
+  AddIcon,
+  MinusIcon,
+  useModal,
+  Skeleton,
+  useTooltip,
+} from '@tianguis-finance/uikit'
 import BigNumber from 'bignumber.js'
 import { useTranslation } from 'contexts/Localization'
 import { getBalanceNumber } from 'utils/formatBalance'

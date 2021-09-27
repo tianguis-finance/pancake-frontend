@@ -12,7 +12,7 @@ import {
   Text,
   TimerIcon,
   useTooltip,
-} from '@pancakeswap/uikit'
+} from '@tianguis-finance/uikit'
 import { BASE_BSC_SCAN_URL } from 'config'
 import { getBscScanLink } from 'utils'
 import { useBlock } from 'state/block/hooks'
@@ -292,7 +292,9 @@ const ActionPanel: React.FC<ActionPanelProps> = ({ account, pool, userDataLoaded
       <ActionContainer>
         {showSubtitle && (
           <Text mt="4px" mb="16px" color="textSubtle">
-            {isAutoVault ? t('Automatic restaking') : `${t('Earn')} MORRALLA ${t('Stake').toLocaleLowerCase()} MORRALLA`}
+            {isAutoVault
+              ? t('Automatic restaking')
+              : `${t('Earn')} MORRALLA ${t('Stake').toLocaleLowerCase()} MORRALLA`}
           </Text>
         )}
         {pool.isAutoVault ? (

@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Box } from '@pancakeswap/uikit'
+import { Box } from '@tianguis-finance/uikit'
 import Container from '../Layout/Container'
 
 /* ${({ theme, background }) => background || theme.colors.gradients.bubblegum}; */

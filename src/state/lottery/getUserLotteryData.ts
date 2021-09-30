@@ -95,7 +95,7 @@ export const getGraphLotteryUser = async (
       { account: account.toLowerCase(), first, skip, where },
     )
     const userRes = response.user
-
+    console.log('lottery', response)
     // If no user returned - return blank user
     if (!userRes) {
       user = blankUser

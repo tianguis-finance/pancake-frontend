@@ -35,7 +35,7 @@ const config: (t: ContextApi['t']) => ConfigMenuItemsType[] = (t) => [
       },
     ],
   },
-  {
+  /* {
     label: t('Win'),
     href: '/lottery',
     icon: 'Trophy',
@@ -45,7 +45,7 @@ const config: (t: ContextApi['t']) => ConfigMenuItemsType[] = (t) => [
         href: '/lottery',
       },
     ],
-  },
+  }, */
   {
     label: 'Info',
     href: '/info',

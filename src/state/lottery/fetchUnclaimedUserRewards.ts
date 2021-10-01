@@ -106,7 +106,6 @@ export const getWinningTickets = async (
 
 const getWinningNumbersForRound = (targetRoundId: string, lotteriesData: LotteryRoundGraphEntity[]) => {
   const targetRound = lotteriesData.find((pastLottery) => pastLottery.id === targetRoundId)
-  console.log('WinningNumbers', targetRound?.finalNumber)
   return targetRound?.finalNumber
 }
 

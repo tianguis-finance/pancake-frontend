@@ -68,7 +68,7 @@ export const useLottery = () => {
   const currentLotteryId = useGetCurrentLotteryId()
   const userLotteryData = useGetUserLotteriesGraphData()
   const lotteriesData = useGetLotteriesGraphData()
-  console.log('useLottery', currentLotteryId, userLotteryData, lotteriesData)
+
   const maxNumberTicketsPerBuyOrClaimAsString = useSelector(
     (state: State) => state.lottery.maxNumberTicketsPerBuyOrClaim,
   )

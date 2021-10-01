@@ -218,7 +218,7 @@ const HowToPlay: React.FC = () => {
     {
       label: t('Step %number%', { number: 1 }),
       title: t('Buy Tickets'),
-      subtitle: t('Prices are set when the round starts, equal to 5 USD in MORRALLA per ticket.'),
+      subtitle: t('Prices are set when the round starts, 100 MORRALLA per ticket.'),
     },
     {
       label: t('Step %number%', { number: 2 }),
@@ -323,7 +323,7 @@ const HowToPlay: React.FC = () => {
             <li>
               <Text display="inline" color="textSubtle">
                 {t(
-                  'An average total of 35,000 MORRALLA from the treasury is added to lottery rounds over the course of a week. This MORRALLA is of course also included in rollovers! Read more in our guide to ',
+                  'An average total of QUIENSABE MORRALLA from the treasury is added to lottery rounds over the course of a week. This MORRALLA is of course also included in rollovers! Read more in our guide to ',
                 )}
                 <InlineLink href="https://docs.tianguis.finance/tokenomics/cake/cake-tokenomics">
                   {t('MORRALLA Tokenomics')}
@@ -338,7 +338,7 @@ const HowToPlay: React.FC = () => {
       </GappedFlex>
       <Divider />
       <Flex justifyContent="center" alignItems="center" flexDirection={['column', 'column', 'row']}>
-        <Image width={240} height={172} src="/images/lottery/tombola.png" alt="tombola bunny" mr="8px" mb="16px" />
+        <Image width={240} height={172} src="/images/tianguis/sombrilla.png" alt="tombola bunny" mr="8px" mb="16px" />
         <Flex maxWidth="300px" flexDirection="column">
           <Heading mb="16px" scale="md">
             {t('Still got questions?')}

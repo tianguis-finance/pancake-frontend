@@ -81,7 +81,6 @@ export const getGraphLotteries = async (
       `,
       { skip, first, where },
     )
-    console.log('response.lotteries', response.lotteries)
     return response.lotteries
   } catch (error) {
     console.error(error)

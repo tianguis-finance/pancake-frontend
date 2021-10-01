@@ -70,8 +70,6 @@ const NextDrawCard = () => {
   const isLotteryOpen = status === LotteryStatus.OPEN
   const userTicketCount = userTickets?.tickets?.length || 0
 
-  console.log('currentRound', currentRound)
-
   const getPrizeBalances = () => {
     if (status === LotteryStatus.CLOSE || status === LotteryStatus.CLAIMABLE) {
       return (

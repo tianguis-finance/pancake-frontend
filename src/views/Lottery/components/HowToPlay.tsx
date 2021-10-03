@@ -197,9 +197,9 @@ const PoolAllocations = () => {
           <Text textAlign="right" bold>
             40%
           </Text>
-          <AllocationMatch color="#BDC2C4" text={t('Burn Pool')} />
+          <AllocationMatch color="#BDC2C4" text={t('Donaciones Pool')} />
           <Text textAlign="right" bold>
-            20%
+            30%
           </Text>
         </AllocationGrid>
       </StepCardInner>
@@ -338,7 +338,7 @@ const HowToPlay: React.FC = () => {
       </GappedFlex>
       <Divider />
       <Flex justifyContent="center" alignItems="center" flexDirection={['column', 'column', 'row']}>
-        <Image width={240} height={172} src="/images/tianguis/sombrilla.png" alt="tombola bunny" mr="8px" mb="16px" />
+        <Image width={555} height={312} src="/images/lottery/tombola.png" alt="tombola bunny" mr="8px" mb="16px" />
         <Flex maxWidth="300px" flexDirection="column">
           <Heading mb="16px" scale="md">
             {t('Still got questions?')}

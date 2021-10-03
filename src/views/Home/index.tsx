@@ -15,6 +15,7 @@ import Footer from './components/Footer'
 import CakeDataRow from './components/CakeDataRow'
 import Equipo from './components/Equipo'
 import Roadmap from './components/Roadmap'
+import SimonTombola from './components/SimonTombola'
 import { WedgeTopLeft, InnerWedgeWrapper, OuterWedgeWrapper, WedgeTopRight } from './components/WedgeSvgs'
 import UserBanner from './components/UserBanner'
 import TwitterFeedCard from './components/TwitterFeedCard'
@@ -28,7 +29,6 @@ const StyledHeroSection = styled(PageSection)`
 `
 
 const UserBannerWrapper = styled(Container)`
- 
   width: 100%;
   top: 0;
   padding-left: 0px;

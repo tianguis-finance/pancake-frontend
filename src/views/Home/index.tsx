@@ -15,6 +15,7 @@ import Footer from './components/Footer'
 import CakeDataRow from './components/CakeDataRow'
 import Equipo from './components/Equipo'
 import Roadmap from './components/Roadmap'
+import SimonTombola from './components/SimonTombola'
 import { WedgeTopLeft, InnerWedgeWrapper, OuterWedgeWrapper, WedgeTopRight } from './components/WedgeSvgs'
 import UserBanner from './components/UserBanner'
 import TwitterFeedCard from './components/TwitterFeedCard'
@@ -28,12 +29,8 @@ const StyledHeroSection = styled(PageSection)`
 `
 
 const UserBannerWrapper = styled(Container)`
-  z-index: 1;
-  position: absolute;
   width: 100%;
   top: 0;
-  left: 50%;
-  transform: translate(-50%, 0);
   padding-left: 0px;
   padding-right: 0px;
 
@@ -137,11 +134,11 @@ const Home: React.FC = () => {
         hasCurvedDivider={false}
       >
         {/*  <SalesSection {...cakeSectionData} /> */}
-        {/* {account && (
+        {account && (
           <UserBannerWrapper>
             <UserBanner />
           </UserBannerWrapper>
-        )} */}
+        )}
         <CakeDataRow />
         <Roadmap />
         <Equipo />

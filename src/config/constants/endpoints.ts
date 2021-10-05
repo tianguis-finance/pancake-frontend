@@ -1,6 +1,6 @@
 export const GRAPH_API_PROFILE = process.env.REACT_APP_GRAPH_API_PROFILE
 export const GRAPH_API_PREDICTION = process.env.REACT_APP_GRAPH_API_PREDICTION
-export const GRAPH_API_LOTTERY = process.env.REACT_APP_GRAPH_API_LOTTERY
+export const GRAPH_API_LOTTERY = 'https://api.thegraph.com/subgraphs/name/elchanclasdeltianguis/loteria-tianguis' // process.env.REACT_APP_GRAPH_API_LOTTERY
 export const SNAPSHOT_VOTING_API = process.env.REACT_APP_SNAPSHOT_VOTING_API
 export const SNAPSHOT_BASE_URL = process.env.REACT_APP_SNAPSHOT_BASE_URL
 export const API_PROFILE = process.env.REACT_APP_API_PROFILE

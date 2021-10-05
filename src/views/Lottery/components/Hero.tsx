@@ -79,24 +79,22 @@ const PrizeTotalBalance = styled(Balance)`
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 `
-
 const StyledBuyTicketButton = styled(BuyTicketsButton)<{ disabled: boolean }>`
   background: ${({ theme, disabled }) =>
-    disabled ? theme.colors.disabled : 'linear-gradient(180deg, #7645d9 0%, #452a7a 100%)'};
-  width: 200px;
+    disabled ? theme.colors.disabled : 'linear-gradient(180deg, #776974 0%, #FF69B4 20%)'};
+  width: 100;
   ${({ theme }) => theme.mediaQueries.xs} {
-    width: 240px;
+    width: 120;
   }
 `
 
 const ButtonWrapper = styled.div`
-  z-index: 1;
+  z-index: 0;
   position: absolute;
-  top: 50%;
+  top: 95%;
   left: 50%;
-  transform: translate(-50%, -50%) rotate(-4deg);
+  transform: translate(-50%, -50%) rotate(-0deg);
 `
-
 const TicketSvgWrapper = styled.div`
   position: absolute;
   top: 0;
@@ -250,11 +248,11 @@ const Hero = () => {
     <Flex flexDirection="column" alignItems="center" justifyContent="center">
       <Decorations />
       <StarsDecorations display={['none', 'none', 'block']}>
-        <img src="/images/lottery/star-big.png" width="124px" height="109px" alt="" />
-        <img src="/images/lottery/star-small.png" width="70px" height="62px" alt="" />
-        <img src="/images/lottery/three-stars.png" width="130px" height="144px" alt="" />
-        <img src="/images/lottery/ticket-l.png" width="123px" height="83px" alt="" />
-        <img src="/images/lottery/ticket-r.png" width="121px" height="72px" alt="" />
+        <img src="/images/tianguis/sombrilla.png" width="124px" height="109px" alt="" />
+        <img src="/images/tianguis/simon.png" width="70px" height="62px" alt="" />
+        <img src="/images/tianguis/morralla.png" width="130px" height="144px" alt="" />
+        <img src="/images/tianguis/michelada.png" width="123px" height="83px" alt="" />
+        <img src="/images/tianguis/sombrilla.png" width="124px" height="109px" alt="" />
       </StarsDecorations>
       <Heading mb="8px" scale="md" color="#ffffff" id="lottery-hero-title">
         {t('The Tianguis Finance Lottery')}
@@ -267,13 +265,15 @@ const Hero = () => {
         alignItems="center"
         justifyContent="center"
       >
-        <ButtonWrapper>
-          <StyledBuyTicketButton disabled={ticketBuyIsDisabled} />
-        </ButtonWrapper>
         <TicketSvgWrapper>
-          <TicketPurchaseCard width="100%" />
+          {/*           <TicketPurchaseCard width="100%" />
+           */}
+          <img src="/images/lottery/ticket.png" width="100%" height="100%" alt="" />
         </TicketSvgWrapper>
       </TicketContainer>
+      <ButtonWrapper>
+        <StyledBuyTicketButton disabled={ticketBuyIsDisabled} />
+      </ButtonWrapper>
     </Flex>
   )
 }

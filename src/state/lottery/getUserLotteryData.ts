@@ -36,6 +36,7 @@ const applyNodeDataToUserGraphResponse = (
       (graphResponseRound) => graphResponseRound.lotteryId === userNodeRound.roundId,
     )
     const nodeRoundData = lotteryNodeData.find((nodeRound) => nodeRound.lotteryId === userNodeRound.roundId)
+
     return {
       endTime: nodeRoundData.endTime,
       status: nodeRoundData.status,
@@ -95,7 +96,6 @@ export const getGraphLotteryUser = async (
       { account: account.toLowerCase(), first, skip, where },
     )
     const userRes = response.user
-
     // If no user returned - return blank user
     if (!userRes) {
       user = blankUser
@@ -132,6 +132,7 @@ const getUserLotteryData = async (account: string, currentLotteryId: string): Pr
   const graphResponse = await getGraphLotteryUser(account)
   const mergedRoundData = applyNodeDataToUserGraphResponse(userRoundsNodeData, graphResponse.rounds, lotteriesNodeData)
   const graphResponseWithNodeRounds = { ...graphResponse, rounds: mergedRoundData }
+
   return graphResponseWithNodeRounds
 }
 

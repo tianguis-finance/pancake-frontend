@@ -20,6 +20,10 @@ export const getCustomMeta = (path: string, t: ContextApi['t']): PageMeta => {
     basePath = '/teams'
   } else if (path.startsWith('/voting/proposal') && path !== '/voting/proposal/create') {
     basePath = '/voting/proposal'
+  } else if (path.startsWith('/nfts/collections')) {
+    basePath = '/nfts/collections'
+  } else if (path.startsWith('/nfts/profile')) {
+    basePath = '/nfts/profile'
   } else {
     basePath = path
   }
@@ -77,10 +81,6 @@ export const getCustomMeta = (path: string, t: ContextApi['t']): PageMeta => {
       return {
         title: `${t('Lottery')} | ${t('Tianguis Finance')}`,
       }
-    case '/collectibles':
-      return {
-        title: `${t('Collectibles')} | ${t('Tianguis Finance')}`,
-      }
     case '/ifo':
       return {
         title: `${t('Initial Farm Offering')} | ${t('Tianguis Finance')}`,
@@ -88,14 +88,6 @@ export const getCustomMeta = (path: string, t: ContextApi['t']): PageMeta => {
     case '/teams':
       return {
         title: `${t('Leaderboard')} | ${t('Tianguis Finance')}`,
-      }
-    case '/profile':
-      return {
-        title: `${t('Your Profile')} | ${t('Tianguis Finance')}`,
-      }
-    case '/profile/tasks':
-      return {
-        title: `${t('Task Center')} | ${t('Tianguis Finance')}`,
       }
     case '/voting':
       return {
@@ -121,8 +113,20 @@ export const getCustomMeta = (path: string, t: ContextApi['t']): PageMeta => {
       }
     case '/info/tokens':
       return {
-        title: `${t('Pools')} | ${t('Tianguis Finance Info & Analytics')}`,
+        title: `${t('Tokens')} | ${t('PancakeSwap Info & Analytics')}`,
         description: 'View statistics for Pancakeswap exchanges.',
+      }
+    case '/nfts':
+      return {
+        title: `${t('Overview')} | ${t('PancakeSwap')}`,
+      }
+    case '/nfts/collections':
+      return {
+        title: `${t('Collections')} | ${t('PancakeSwap')}`,
+      }
+    case '/nfts/profile':
+      return {
+        title: `${t('Your Profile')} | ${t('Tianguis')}`,
       }
     default:
       return null

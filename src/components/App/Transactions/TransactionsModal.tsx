@@ -1,19 +1,16 @@
-import React, { useMemo, useCallback } from 'react'
+import React, { useCallback } from 'react'
 import useActiveWeb3React from 'hooks/useActiveWeb3React'
 import { useDispatch } from 'react-redux'
 import { Modal, ModalBody, Text, Button, Flex, InjectedModalProps } from '@tianguis-finance/uikit'
 import { useTranslation } from 'contexts/Localization'
+import { orderBy } from 'lodash'
 import { isTransactionRecent, useAllTransactions } from 'state/transactions/hooks'
 import { TransactionDetails } from 'state/transactions/reducer'
 import { AppDispatch } from 'state'
 import { clearAllTransactions } from 'state/transactions/actions'
 import { AutoRow } from '../../Layout/Row'
 import Transaction from './Transaction'
-
-// we want the latest one to come first, so return negative if a is after b
-function newTransactionsFirst(a: TransactionDetails, b: TransactionDetails) {
-  return b.addedTime - a.addedTime
-}
+import ConnectWalletButton from '../../ConnectWalletButton'
 
 function renderTransactions(transactions: TransactionDetails[]) {
   return (
@@ -32,10 +29,11 @@ const TransactionsModal: React.FC<InjectedModalProps> = ({ onDismiss }) => {
 
   const { t } = useTranslation()
 
-  const sortedRecentTransactions = useMemo(() => {
-    const txs = Object.values(allTransactions)
-    return txs.filter(isTransactionRecent).sort(newTransactionsFirst)
-  }, [allTransactions])
+  const sortedRecentTransactions = orderBy(
+    Object.values(allTransactions).filter(isTransactionRecent),
+    'addedTime',
+    'desc',
+  )
 
   const pending = sortedRecentTransactions.filter((tx) => !tx.receipt)
   const confirmed = sortedRecentTransactions.filter((tx) => tx.receipt)
@@ -46,7 +44,7 @@ const TransactionsModal: React.FC<InjectedModalProps> = ({ onDismiss }) => {
 
   return (
     <Modal title={t('Recent Transactions')} headerBackground="gradients.cardHeader" onDismiss={onDismiss}>
-      {account && (
+      {account ? (
         <ModalBody>
           {!!pending.length || !!confirmed.length ? (
             <>
@@ -63,6 +61,8 @@ const TransactionsModal: React.FC<InjectedModalProps> = ({ onDismiss }) => {
             <Text>{t('No recent transactions')}</Text>
           )}
         </ModalBody>
+      ) : (
+        <ConnectWalletButton />
       )}
     </Modal>
   )

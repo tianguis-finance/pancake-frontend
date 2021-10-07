@@ -1,6 +1,7 @@
 import React from 'react'
 import styled, { keyframes } from 'styled-components'
-import { Flex, Heading, Link, Button } from '@tianguis-finance/uikit'
+import { Link } from 'react-router-dom'
+import { Flex, Heading, Button } from '@tianguis-finance/uikit'
 import { useWeb3React } from '@web3-react/core'
 import { useTranslation } from 'contexts/Localization'
 import ConnectWalletButton from 'components/ConnectWalletButton'
@@ -118,7 +119,7 @@ const Hero = () => {
           </Heading>
           <Flex>
             {!account && <ConnectWalletButton mr="8px" />}
-            <Link mr="16px" href="/swap">
+            <Link to="/swap">
               <Button variant={!account ? 'secondary' : 'primary'}>{t('Trade Now')}</Button>
             </Link>
           </Flex>

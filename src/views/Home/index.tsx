@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Flex } from '@tianguis-finance/uikit'
 import PageSection from 'components/PageSection'
 import { useWeb3React } from '@web3-react/core'
 import useTheme from 'hooks/useTheme'

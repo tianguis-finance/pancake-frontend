@@ -1,16 +1,7 @@
 import React, { useState, useCallback } from 'react'
 import styled from 'styled-components'
-import {
-  AutoRenewIcon,
-  Button,
-  Card,
-  CardBody,
-  Flex,
-  Skeleton,
-  Text,
-  Link,
-  ArrowForwardIcon,
-} from '@tianguis-finance/uikit'
+import { AutoRenewIcon, Button, Card, CardBody, Flex, Skeleton, Text, ArrowForwardIcon } from '@tianguis-finance/uikit'
+import { Link } from 'react-router-dom'
 import BigNumber from 'bignumber.js'
 import { useTranslation } from 'contexts/Localization'
 import { usePriceCakeBusd } from 'state/farms/hooks'
@@ -92,7 +83,7 @@ const HarvestCard = () => {
             </Text>
           </Flex>
           {numTotalToCollect <= 0 ? (
-            <Link href="farms">
+            <Link to="farms">
               <Button width={['100%', null, null, 'auto']} variant="secondary">
                 <Text color="primary" bold>
                   {t('Start earning')}

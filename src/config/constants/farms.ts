@@ -37,7 +37,7 @@ const farms: SerializedFarmConfig[] = [
     token: serializedTokens.morralla,
     quoteToken: serializedTokens.busd,
   },
-  /**
+  /** PID 3 tlp busdbnb
    * V3 by order of release (some may be out of PID order due to multiplier boost)
    */
   {

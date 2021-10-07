@@ -48,6 +48,7 @@ export const mainnetTokens = {
     'https://tianguis.finance',
   ),
   tlos: new Token(MAINNET, '0xb6C53431608E626AC81a9776ac3e999c5556717c', 18, 'TLOS', 'Telos', 'https://www.telos.net/'),
+  nft: new Token(MAINNET, '0x1fC9004eC7E5722891f5f38baE7678efCB11d34D', 6, 'NFT', 'APENFT', 'https://apenft.org'),
   stephero: new Token(
     MAINNET,
     '0xE8176d414560cFE1Bf82Fd73B986823B89E4F545',
@@ -56,6 +57,7 @@ export const mainnetTokens = {
     'StepHero',
     'https://stephero.io/',
   ),
+  pros: new Token(MAINNET, '0xEd8c8Aa8299C10f067496BB66f8cC7Fb338A3405', 18, 'PROS', 'Prosper', 'https://prosper.so/'),
   qbt: new Token(MAINNET, '0x17B7163cf1Dbd286E262ddc68b553D899B93f526', 18, 'QBT', 'Qubit Token', 'https://qbt.fi/'),
   cvp: new Token(
     MAINNET,
@@ -1655,7 +1657,7 @@ export const mainnetTokens = {
 export const testnetTokens = {
   wbnb: new Token(
     TESTNET,
-    '0xae13d989daC2f0dEbFf460aC112a837C89BAa7cd',
+    '0x094616F0BdFB0b526bD735Bf66Eca0Ad254ca81F',
     18,
     'WBNB',
     'Wrapped BNB',

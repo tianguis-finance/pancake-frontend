@@ -75,4 +75,20 @@ export default {
     56: '0xb92Ab7c1edcb273AbA24b0656cEb3681654805D2',
     97: '0x3F9602593b4f7C67ab045DB51BbDEa94E40fA9Fe',
   },
+  AnniversaryAchievement: {
+    56: '0x787980da5491118C3cB33B21aB50c8c379D2C552',
+    97: '0x981aE96378e770DE44F89cD9175E708f9EDB70a9',
+  },
+  nftMarket: {
+    56: '0x17539cCa21C7933Df5c980172d22659B8C345C5A',
+    97: '0x7f9f37ddcaa33893f9beb3d8748c8d6bfbde6ab2',
+  },
+  nftSale: {
+    56: '0x1',
+    97: '0x2',
+  },
+  pancakeSquad: {
+    56: '0x3',
+    97: '0x4',
+  },
 }

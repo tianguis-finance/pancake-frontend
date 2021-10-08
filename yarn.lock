@@ -3181,7 +3181,7 @@
     event-iterator "^2.0.0"
     loglevel "^1.7.0"
 
-"@tianguis-finance/uikit@^0.54.3":
+"@tianguis-finance/uikit@0.0.5":
   version "0.0.5"
   resolved "https://registry.yarnpkg.com/@tianguis-finance/uikit/-/uikit-0.0.5.tgz#b84d518d11e9ddf77ed5640db4fbbe9dbf47e260"
   integrity sha512-WsskzB+1CUj8ZlxAsIUJBynuZU550sbWT00z+SctI/yh/y9ZKSwBNZCONVUWYWRVZfktf5YCZ06ENWr2LfxnBg==

@@ -41,7 +41,7 @@ export const mainnetTokens = {
   ),
   tanda: new Token(
     MAINNET,
-    '0x97800E6f30f2b0627FF877b2bC81050343f64881',
+    '0x1d65aDE9FDAc3BE14d62c2663302BbA06b208518',
     18,
     'TANDA',
     'La Tanda del Tianguis',

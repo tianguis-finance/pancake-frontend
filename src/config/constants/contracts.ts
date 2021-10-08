@@ -1,7 +1,7 @@
 export default {
   masterChef: {
     97: '0x98f310a06b2018FC3350c5E2d01864Ac8783cDEA',
-    56: '0xb9a30EFC00Fd8bF0c58700Af7A2aBaA0a417c845', // pinche tianguis 2 farm
+    56: '0xE51e9a941dD1eea7358d05F25922973d351EB930', // pinche tianguis 2 farm
   },
   sousChef: {
     97: '0xd3af5fe61dbaf8f73149bfcfa9fb653ff096029a',
@@ -48,7 +48,7 @@ export default {
     97: '0x24ec6962dbe874F6B67B5C50857565667fA0854F',
   },
   cakeVault: {
-    56: '0x8E65B4716a3b34087569E7164E773FA5251eb96A', // nueva morralla vault
+    56: '0x0000000000000000000000000000000000000000', // nueva morralla vault
     97: '',
   },
   predictions: {

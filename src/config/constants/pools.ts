@@ -10,7 +10,7 @@ const pools: SerializedPoolConfig[] = [
     earningToken: serializedTokens.morralla,
     contractAddress: {
       97: '',
-      56: '0xb9a30EFC00Fd8bF0c58700Af7A2aBaA0a417c845', // tianguis farm
+      56: '0xE51e9a941dD1eea7358d05F25922973d351EB930', // tianguis farm
     },
     poolCategory: PoolCategory.CORE,
     harvest: true,

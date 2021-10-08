@@ -78,7 +78,7 @@ export const useBurnedBalance = (tokenAddress: string) => {
   useEffect(() => {
     const fetchBalance = async () => {
       const contract = getMorrallaContract()
-      const res = await contract.totalMorrallaBurned()
+      const res = await contract.totalBurned()
       setBalance(new BigNumber(res.toString()))
     }
 

@@ -27,7 +27,6 @@ const HasSharesActions: React.FC<HasStakeActionProps> = ({ pool, stakingTokenBal
   const stakedDollarValue = morrallaPriceBusd.gt(0)
     ? getBalanceNumber(cakeAsBigNumber.multipliedBy(morrallaPriceBusd), stakingToken.decimals)
     : 0
-
   const [onPresentTokenRequired] = useModal(<NotEnoughTokensModal tokenSymbol={stakingToken.symbol} />)
   const [onPresentStake] = useModal(
     <VaultStakeModal stakingMax={stakingTokenBalance} performanceFee={performanceFee} pool={pool} />,

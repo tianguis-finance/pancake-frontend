@@ -18,6 +18,14 @@
       "decimals": 18,
       "logoURI": "https://tianguis.finance/images/tokens/0x5625eb03D999817941BaD868BbF8A0eaf0749557.png"
     },
+    {
+      "name": "Nueva Morralla",
+      "symbol": "MORRALLA",
+      "address": "0xacF018DbE3F91A81188276E3ABc7e5d160196b60",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "https://tianguis.finance/images/tokens/0x5625eb03D999817941BaD868BbF8A0eaf0749557.png"
+    },
 
     {
       "name": "WBNB Token",

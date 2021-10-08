@@ -75,14 +75,14 @@ export const usePollFarmsWithUserData = (includeArchive = false) => {
 /**
  * Fetches the "core" farm data used globally
  * 1 = MORRALLA-BNB LP
- * 4 = BUSD-BNB LP
+ * 3 = BUSD-BNB LP
  */
 export const usePollCoreFarmData = () => {
   const dispatch = useAppDispatch()
   const { fastRefresh } = useRefresh()
 
   useEffect(() => {
-    dispatch(fetchFarmsPublicDataAsync([1, 4]))
+    dispatch(fetchFarmsPublicDataAsync([1, 3]))
   }, [dispatch, fastRefresh])
 }
 

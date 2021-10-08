@@ -52,6 +52,7 @@ const Apr: React.FC<AprProps> = ({ pool, showIcon, stakedBalance, performanceFee
     onPresentApyModal()
   }
 
+  console.log('here', apr, autoCompoundFrequency)
   return (
     <AprLabelContainer alignItems="center" justifyContent="space-between" {...props}>
       {earningsPercentageToDisplay || isFinished ? (

@@ -34,7 +34,7 @@ const PoolRow: React.FC<PoolRowProps> = ({ pool, account, userDataLoaded }) => {
   const toggleExpanded = () => {
     setExpanded((prev) => !prev)
   }
-
+  console.log('pool.isAutoVault ', pool.isAutoVault)
   return (
     <>
       <StyledRow role="row" onClick={toggleExpanded}>

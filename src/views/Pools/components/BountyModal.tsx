@@ -58,6 +58,7 @@ const BountyModal: React.FC<BountyModalProps> = ({ onDismiss, TooltipComponent }
     tooltipPadding: { right: 15 },
   })
 
+
   const handleConfirmClick = async () => {
     setPendingTx(true)
     try {

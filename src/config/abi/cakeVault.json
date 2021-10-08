@@ -261,7 +261,7 @@
   },
   {
     "inputs": [],
-    "name": "calculateHarvestMorrallaRewards",
+    "name": "calculateHarvestCakeRewards",
     "outputs": [
       {
         "internalType": "uint256",
@@ -274,7 +274,7 @@
   },
   {
     "inputs": [],
-    "name": "calculateTotalPendingMorrallaRewards",
+    "name": "calculateTotalPendingCakeRewards",
     "outputs": [
       {
         "internalType": "uint256",

@@ -33,7 +33,7 @@ export const mainnetTokens = {
   ),
   morralla: new Token(
     MAINNET,
-    '0x5625eb03D999817941BaD868BbF8A0eaf0749557',
+    '0xadcBAEbaac0f775923eBDFb6B904399DA8801275',
     18,
     'MORRALLA',
     'Tianguis finance',
@@ -41,10 +41,10 @@ export const mainnetTokens = {
   ),
   micheladas: new Token(
     MAINNET,
-    '0xd79E409C875C77ce685c613877266eE89C79D902',
+    '0x375821Aad508FF3Df097BA4EA4D467F95EFB55FE',
     18,
-    'MICHELADA',
-    'Micheladas del Tianguis',
+    'TANDA',
+    'La Tanda del Tianguis',
     'https://tianguis.finance',
   ),
   tlos: new Token(MAINNET, '0xb6C53431608E626AC81a9776ac3e999c5556717c', 18, 'TLOS', 'Telos', 'https://www.telos.net/'),

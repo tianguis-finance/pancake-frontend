@@ -54,6 +54,7 @@ const CakeDataRow = () => {
   const { t } = useTranslation()
   const totalSupply = useTotalSupply()
   const burnedBalance = getBalanceNumber(useBurnedBalance(tokens.morralla.address))
+  console.log('check burn½', burnedBalance, tokens.morralla.address)
   const cakeSupply = totalSupply ? getBalanceNumber(totalSupply) - burnedBalance : 0
   const morrallaPriceBusd = usePriceCakeBusd()
   const mcap = morrallaPriceBusd.times(cakeSupply)

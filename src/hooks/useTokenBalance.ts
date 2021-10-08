@@ -72,13 +72,12 @@ export const useTotalSupply = () => {
 export const useBurnedBalance = (tokenAddress: string) => {
   const [balance, setBalance] = useState(BIG_ZERO)
   const { slowRefresh } = useRefresh()
-
   /* balanceOf('0x000000000000000000000000000000000000dEaD') */
 
   useEffect(() => {
     const fetchBalance = async () => {
       const contract = getMorrallaContract()
-      const res = await contract.totalMorrallaBurned()
+      const res = await contract.totalBurned()
       setBalance(new BigNumber(res.toString()))
     }
 

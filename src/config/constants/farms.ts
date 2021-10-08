@@ -12,7 +12,7 @@ const farms: SerializedFarmConfig[] = [
     lpSymbol: 'MORRALLA',
     lpAddresses: {
       97: '',
-      56: '0x5625eb03d999817941bad868bbf8a0eaf0749557',
+      56: '0xadcBAEbaac0f775923eBDFb6B904399DA8801275',
     },
     token: serializedTokens.morralla,
     quoteToken: serializedTokens.wbnb,
@@ -22,7 +22,7 @@ const farms: SerializedFarmConfig[] = [
     lpSymbol: 'MORRALLA-BNB',
     lpAddresses: {
       97: '',
-      56: '0x2a8a0d9f3e18b27b9de5b04cca02f229c9745d18',
+      56: '0xe54b765983fc0a2e15943a5d9fc8b1af7bbc9aa6',
     },
     token: serializedTokens.morralla,
     quoteToken: serializedTokens.wbnb,
@@ -32,14 +32,21 @@ const farms: SerializedFarmConfig[] = [
     lpSymbol: 'MORRALLA-BUSD',
     lpAddresses: {
       97: '',
-      56: '0x8E4b9AC4FA97530ECE7ddD477c2768F462684764',
+      56: '0xa36c4c7d11732681e58cbb7b8716acb8871ec4c3',
     },
     token: serializedTokens.morralla,
     quoteToken: serializedTokens.busd,
   },
-  /**
-   * V3 by order of release (some may be out of PID order due to multiplier boost)
-   */
+  {
+    pid: 3,
+    lpSymbol: 'MORRALLA-XRP',
+    lpAddresses: {
+      97: '',
+      56: '0x3140efe2f611c8391e39e3179e50c59a74731371',
+    },
+    token: serializedTokens.morralla,
+    quoteToken: serializedTokens.busd,
+  },
   {
     pid: 4,
     lpSymbol: 'BNB-BUSD LP',
@@ -50,57 +57,9 @@ const farms: SerializedFarmConfig[] = [
     token: serializedTokens.busd,
     quoteToken: serializedTokens.wbnb,
   },
-  {
-    pid: 5,
-    lpSymbol: 'MORRALLA-XRP LP',
-    lpAddresses: {
-      97: '',
-      56: '0x211cBcdD63D919CE33EeE83518801F2A3ea63faa',
-    },
-    token: serializedTokens.morralla,
-    quoteToken: serializedTokens.xrp,
-  },
-  {
-    pid: 6,
-    lpSymbol: 'MORRALLA-BTCB LP',
-    lpAddresses: {
-      97: '',
-      56: '0xBc0cf9dFC4A58e698F8198ad3A5621c027b5412D',
-    },
-    token: serializedTokens.morralla,
-    quoteToken: serializedTokens.btcb,
-  },
-  {
-    pid: 7,
-    lpSymbol: 'MORRALLA-ETH LP',
-    lpAddresses: {
-      97: '',
-      56: '0x3678463a9805D7B4E59a61C9a3D52C9A6dB54fB0',
-    },
-    token: serializedTokens.morralla,
-    quoteToken: serializedTokens.eth,
-  },
-
-  {
-    pid: 8,
-    lpSymbol: 'MORRALLA-ADA LP',
-    lpAddresses: {
-      97: '',
-      56: '0x5709e5F67E4492742Ff46890A7107Fbb99CD096E',
-    },
-    token: serializedTokens.morralla,
-    quoteToken: serializedTokens.ada,
-  },
-  {
-    pid: 9,
-    lpSymbol: 'MORRALLA-CAKE LP',
-    lpAddresses: {
-      97: '',
-      56: '0xcdC7497E6c4C9605af0a889FB800B9754d3f442c',
-    },
-    token: serializedTokens.morralla,
-    quoteToken: serializedTokens.cake,
-  },
+  /**
+   * V3 by order of release (some may be out of PID order due to multiplier boost)
+   */
 ]
 
 export default farms

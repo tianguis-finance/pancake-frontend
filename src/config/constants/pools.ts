@@ -10,7 +10,7 @@ const pools: SerializedPoolConfig[] = [
     earningToken: serializedTokens.morralla,
     contractAddress: {
       97: '',
-      56: '0xFd0Dd713048E911630A7dB824857637d31A675b7',
+      56: '0x5785FcAa31aBeba6cEA0e360C899c148FcE9476A',
     },
     poolCategory: PoolCategory.CORE,
     harvest: true,

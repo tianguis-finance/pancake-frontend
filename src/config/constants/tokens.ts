@@ -43,7 +43,7 @@ export const mainnetTokens = {
     MAINNET,
     '0x5625eb03d999817941bad868bbf8a0eaf0749557',
     18,
-    'MORRALLA',
+    'MORRALLA VIEJA',
     'Tianguis finance',
     'https://tianguis.finance',
   ),

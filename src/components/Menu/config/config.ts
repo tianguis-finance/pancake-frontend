@@ -46,12 +46,12 @@ const config: (t: ContextApi['t']) => ConfigMenuItemsType[] = (t) => [
     type: DropdownMenuItemType.EXTERNAL_LINK,
     items: [
       {
-        label: t('La migra'),
+        label: t('La Migra'),
         href: 'https://lamigra.tianguis.finance',
         type: DropdownMenuItemType.EXTERNAL_LINK,
       },
       {
-        label: t('tinaguis v1'),
+        label: t('Tianguis v1'),
         href: 'https://v1.tianguis.finance',
         type: DropdownMenuItemType.EXTERNAL_LINK,
       },

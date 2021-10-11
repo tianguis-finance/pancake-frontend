@@ -3,10 +3,10 @@ import { ContextApi } from 'contexts/Localization/types'
 
 export const footerLinks: (t: ContextApi['t']) => FooterLinkType[] = (t) => [
   {
-    label: 'About',
+    label: 'Nosotros',
     items: [
       {
-        label: 'Contact',
+        label: 'Contacto',
         href: 'https://t.me/tianguisfinance',
       },
       /*   {
@@ -14,7 +14,7 @@ export const footerLinks: (t: ContextApi['t']) => FooterLinkType[] = (t) => [
         href: "https://pancakeswap.medium.com/",
       }, */
       {
-        label: 'Community',
+        label: 'Communidad',
         href: 'https://t.me/tianguisfinance',
       },
       /*   {
@@ -31,8 +31,8 @@ export const footerLinks: (t: ContextApi['t']) => FooterLinkType[] = (t) => [
       }, */
     ],
   },
-  {
-    label: 'Help',
+ /*  {
+    label: 'Socorro!',
     items: [
       {
         label: 'Customer',
@@ -47,7 +47,7 @@ export const footerLinks: (t: ContextApi['t']) => FooterLinkType[] = (t) => [
         href: 'https://t.me/tianguisfinance',
       },
     ],
-  },
+  }, */
   {
     label: 'Developers',
     items: [
@@ -55,7 +55,7 @@ export const footerLinks: (t: ContextApi['t']) => FooterLinkType[] = (t) => [
         label: 'Github',
         href: 'https://github.com/tianguis-finance',
       },
-      {
+      /* {
         label: 'Documentation',
         href: 'https://t.me/tianguisfinance',
       },
@@ -70,7 +70,7 @@ export const footerLinks: (t: ContextApi['t']) => FooterLinkType[] = (t) => [
       {
         label: 'Careers',
         href: 'https://t.me/tianguisfinance',
-      },
+      }, */
     ],
   },
 ]

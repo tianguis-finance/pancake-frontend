@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { useTotalSupply, useBurnedBalance } from 'hooks/useTokenBalance'
 import { getBalanceNumber, formatLocalisedCompactNumber } from 'utils/formatBalance'
 import { usePriceCakeBusd } from 'state/farms/hooks'
-import { Flex, Text, Heading, Skeleton, Image } from '@tianguis-finance/uikit'
+import { Flex, Text, Heading, Skeleton, Image, BscScanIcon } from '@tianguis-finance/uikit'
 import { useTranslation } from 'contexts/Localization'
 import Balance from 'components/Balance'
 import tokens from 'config/constants/tokens'
@@ -93,6 +93,20 @@ const CakeDataRow = () => {
           )}
           <Text color="textSubtle">{t('Current emissions')}</Text>
           <Heading scale="lg">{t('%cakeEmissions%/block', { cakeEmissions: emissionsPerBlock })}</Heading>
+        </StyledColumn>
+      </Grid>
+      <Grid>
+        <StyledColumn noMobileBorder>
+          <Text color="textSubtle">{t('Contrato')}</Text>
+          <Text fontSize="16px">
+            {t('0xadcBAEbaac0f775923eBDFb6B904399DA8801275')}{' '}
+            <a href="https://bscscan.com/address/0xadcBAEbaac0f775923eBDFb6B904399DA8801275">
+              <BscScanIcon />
+            </a>
+          </Text>
+
+          <Text color="textSubtle">{t('Suministro máximo')}</Text>
+          <Heading scale="lg">{t('15768000')}</Heading>
         </StyledColumn>
       </Grid>
     </StyledContainer>

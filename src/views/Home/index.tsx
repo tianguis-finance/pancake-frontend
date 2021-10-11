@@ -15,6 +15,7 @@ import Footer from './components/Footer'
 import CakeDataRow from './components/CakeDataRow'
 import Equipo from './components/Equipo'
 import Roadmap from './components/Roadmap'
+import LaMigra from './components/LaMigra'
 import SimonTombola from './components/SimonTombola'
 import { WedgeTopLeft, InnerWedgeWrapper, OuterWedgeWrapper, WedgeTopRight } from './components/WedgeSvgs'
 import UserBanner from './components/UserBanner'
@@ -139,6 +140,7 @@ const Home: React.FC = () => {
             <UserBanner />
           </UserBannerWrapper>
         )}
+        <LaMigra />
         <CakeDataRow />
         <Roadmap />
         <Equipo />

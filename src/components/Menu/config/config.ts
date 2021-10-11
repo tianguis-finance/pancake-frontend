@@ -33,16 +33,27 @@ const config: (t: ContextApi['t']) => ConfigMenuItemsType[] = (t) => [
         label: t('Pools'),
         href: '/pools',
       },
+      {
+        label: t('La Bodega'),
+        href: 'https://bodega.tianguis.finance',
+        type: DropdownMenuItemType.EXTERNAL_LINK,
+      },
     ],
   },
   {
-    label: t('Win'),
-    href: '/lottery',
-    icon: 'Trophy',
+    label: t('V1'),
+    href: 'https://v1.tianguis.finance',
+    type: DropdownMenuItemType.EXTERNAL_LINK,
     items: [
       {
-        label: t('Lottery'),
-        href: '/lottery',
+        label: t('La migra'),
+        href: 'https://lamigra.tianguis.finance',
+        type: DropdownMenuItemType.EXTERNAL_LINK,
+      },
+      {
+        label: t('tinaguis v1'),
+        href: 'https://v1.tianguis.finance',
+        type: DropdownMenuItemType.EXTERNAL_LINK,
       },
     ],
   },
@@ -53,7 +64,7 @@ const config: (t: ContextApi['t']) => ConfigMenuItemsType[] = (t) => [
     hideSubNav: true,
     items: [
       {
-        label: t('Info'),
+        label: t('gráficos'),
         href: '/info',
       },
     ],

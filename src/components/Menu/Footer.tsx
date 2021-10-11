@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import { ButtonMenu, ButtonMenuItem, LinkExternal, Flex, Svg, Image, Button } from '@tianguis-finance/uikit'
-import { useTranslation } from 'contexts/Localization'
+import { Flex } from '@tianguis-finance/uikit'
+// import { useTranslation } from 'contexts/Localization'
 
 const Wrapper = styled.div`
   width: 100%;
@@ -35,7 +35,7 @@ const BubbleWrapper = styled(Flex)`
 `
 
 const Footer = () => {
-  const { t } = useTranslation()
+//  const { t } = useTranslation()
   return (
     <Wrapper>
       <Flex flexDirection={['column', 'column', 'row']} alignItems="center">

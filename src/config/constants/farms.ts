@@ -45,7 +45,7 @@ const farms: SerializedFarmConfig[] = [
       56: '0x3140efe2f611c8391e39e3179e50c59a74731371',
     },
     token: serializedTokens.morralla,
-    quoteToken: serializedTokens.busd,
+    quoteToken: serializedTokens.xrp,
   },
   {
     pid: 4,
@@ -60,6 +60,36 @@ const farms: SerializedFarmConfig[] = [
   /**
    * V3 by order of release (some may be out of PID order due to multiplier boost)
    */
+  {
+    pid: 5,
+    lpSymbol: 'MORRALLA-ETH LP',
+    lpAddresses: {
+      97: '',
+      56: '0xAA4C6f6d60F1E52eA9dF8dcE98860eF6E5FC1f36',
+    },
+    token: serializedTokens.morralla,
+    quoteToken: serializedTokens.eth,
+  },
+  {
+    pid: 6,
+    lpSymbol: 'MORRALLA-BTC LP',
+    lpAddresses: {
+      97: '',
+      56: '0xb1827e26d37a04b6b73851dc0a891ece8e414c42',
+    },
+    token: serializedTokens.morralla,
+    quoteToken: serializedTokens.btcb,
+  },
+  {
+    pid: 7,
+    lpSymbol: 'MORRALLA-ADA LP',
+    lpAddresses: {
+      97: '',
+      56: '0xeb8967533572027a337961690adc3e5fb2f9fccc',
+    },
+    token: serializedTokens.morralla,
+    quoteToken: serializedTokens.ada,
+  },
 ]
 
 export default farms

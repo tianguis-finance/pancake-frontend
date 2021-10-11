@@ -39,6 +39,14 @@ export const mainnetTokens = {
     'Tianguis finance',
     'https://tianguis.finance',
   ),
+  oldmorralla: new Token(
+    MAINNET,
+    '0x5625eb03d999817941bad868bbf8a0eaf0749557',
+    18,
+    'MORRALLA',
+    'Tianguis finance',
+    'https://tianguis.finance',
+  ),
   micheladas: new Token(
     MAINNET,
     '0x375821Aad508FF3Df097BA4EA4D467F95EFB55FE',

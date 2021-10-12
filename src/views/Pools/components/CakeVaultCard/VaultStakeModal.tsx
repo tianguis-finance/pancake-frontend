@@ -130,7 +130,7 @@ const VaultStakeModal: React.FC<VaultStakeModalProps> = ({
     // trigger withdrawAll function if the withdrawal will leave 0.000001 MORRALLA or less
     const triggerWithdrawAllThreshold = new BigNumber(1000000000000)
     const sharesRemaining = userShares.minus(shareStakeToWithdraw.sharesAsBigNumber)
-    const isWithdrawingAll = sharesRemaining.lte(triggerWithdrawAllThreshold)
+    const isWithdrawingAll = true // sharesRemaining.lte(triggerWithdrawAllThreshold)
 
     if (isWithdrawingAll) {
       try {

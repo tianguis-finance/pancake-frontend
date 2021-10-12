@@ -41,6 +41,8 @@ const StyledContainer = styled.div`
   border: 2px solid yellow;
   border-radius: 16px;
   margin-top: 32px;
+  margin-bottom: 32px;
+
   padding: 32px;
   box-shadow: 0px 10px 30px 0px #008800;
 `

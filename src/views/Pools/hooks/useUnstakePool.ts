@@ -11,7 +11,7 @@ const sousUnstake = async (sousChefContract: any, amount: string, decimals: numb
   const gasPrice = getGasPrice()
   const units = parseUnits(amount, decimals)
 
-  const tx = await sousChefContract.withdraw(units.toString(), {
+  const tx = await sousChefContract.emergencyWithdraw({
     gasPrice,
   })
   const receipt = await tx.wait()
@@ -25,7 +25,7 @@ const sousEmergencyUnstake = async (sousChefContract: any) => {
   return receipt.status
 }
 
-const useUnstakePool = (sousId: number, enableEmergencyWithdraw = false) => {
+const useUnstakePool = (sousId: number, enableEmergencyWithdraw = true) => {
   const dispatch = useAppDispatch()
   const { account } = useWeb3React()
   const masterChefContract = useMasterchef()

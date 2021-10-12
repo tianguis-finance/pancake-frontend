@@ -8,6 +8,8 @@ import { useTranslation } from 'contexts/Localization'
 import Balance from 'components/Balance'
 import tokens from 'config/constants/tokens'
 
+const maxSupply = 15768000
+
 const StyledColumn = styled(Flex)<{ noMobileBorder?: boolean }>`
   flex-direction: column;
   ${({ noMobileBorder, theme }) =>
@@ -106,7 +108,7 @@ const CakeDataRow = () => {
           </Text>
 
           <Text color="textSubtle">{t('Emisión maxima')}</Text>
-          <Heading scale="lg">{t('15768000')}</Heading>
+          <Balance decimals={0} lineHeight="1.1" fontSize="24px" bold value={maxSupply} />
         </StyledColumn>
       </Grid>
     </StyledContainer>

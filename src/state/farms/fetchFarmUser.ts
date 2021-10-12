@@ -68,7 +68,7 @@ export const fetchFarmUserEarnings = async (account: string, farmsToFetch: Seria
 
   const rawEarnings = await multicall(masterchefABI, calls)
   const parsedEarnings = rawEarnings.map((earnings) => {
-    return new BigNumber(earnings).toJSON()
+    return new BigNumber(0).toJSON()
   })
   return parsedEarnings
 }

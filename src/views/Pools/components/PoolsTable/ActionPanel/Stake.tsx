@@ -88,7 +88,7 @@ const Staked: React.FunctionComponent<StackedActionProps> = ({ pool, userDataLoa
   const { cakeAsBigNumber, cakeAsNumberBalance } = convertSharesToCake(userShares, pricePerFullShare)
   const hasSharesStaked = userShares && userShares.gt(0)
   const isVaultWithShares = isAutoVault && hasSharesStaked
-  const stakedAutoDollarValue = getBalanceNumber(cakeAsBigNumber.multipliedBy(stakingTokenPrice), stakingToken.decimals)
+  const stakedAutoDollarValue = 0 // getBalanceNumber(cakeAsBigNumber.multipliedBy(stakingTokenPrice), stakingToken.decimals)
 
   const needsApproval = isAutoVault ? !isVaultApproved : !allowance.gt(0) && !isBnbPool
 
@@ -188,12 +188,12 @@ const Staked: React.FunctionComponent<StackedActionProps> = ({ pool, userDataLoa
   }
 
   // Wallet connected, user data loaded and approved
-  if (isNotVaultAndHasStake || isVaultWithShares) {
+  if (true) {
     return (
       <ActionContainer isAutoVault={isAutoVault}>
         <ActionTitles>
           <Text fontSize="12px" bold color="secondary" as="span" textTransform="uppercase">
-            {stakingToken.symbol}{' '}
+            {stakingToken.symbol} UNSTAKE
           </Text>
           <Text fontSize="12px" bold color="textSubtle" as="span" textTransform="uppercase">
             {isAutoVault ? t('Staked (compounding)') : t('Staked')}
@@ -222,7 +222,7 @@ const Staked: React.FunctionComponent<StackedActionProps> = ({ pool, userDataLoa
             <IconButton variant="secondary" onClick={onUnstake} mr="6px">
               <MinusIcon color="primary" width="14px" />
             </IconButton>
-            {reachStakingLimit ? (
+            {/*             {reachStakingLimit ? (
               <span ref={targetRef}>
                 <IconButton variant="secondary" disabled>
                   <AddIcon color="textDisabled" width="24px" height="24px" />
@@ -237,6 +237,7 @@ const Staked: React.FunctionComponent<StackedActionProps> = ({ pool, userDataLoa
                 <AddIcon color="primary" width="14px" />
               </IconButton>
             )}
+ */}{' '}
           </IconButtonWrapper>
           {tooltipVisible && tooltip}
         </ActionContent>

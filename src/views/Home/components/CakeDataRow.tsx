@@ -105,7 +105,7 @@ const CakeDataRow = () => {
             </a>
           </Text>
 
-          <Text color="textSubtle">{t('Suministro máximo')}</Text>
+          <Text color="textSubtle">{t('Emisión maxima')}</Text>
           <Heading scale="lg">{t('15768000')}</Heading>
         </StyledColumn>
       </Grid>

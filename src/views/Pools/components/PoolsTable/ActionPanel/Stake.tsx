@@ -88,7 +88,7 @@ const Staked: React.FunctionComponent<StackedActionProps> = ({ pool, userDataLoa
   const { cakeAsBigNumber, cakeAsNumberBalance } = convertSharesToCake(userShares, pricePerFullShare)
   const hasSharesStaked = userShares && userShares.gt(0)
   const isVaultWithShares = isAutoVault && hasSharesStaked
-  const stakedAutoDollarValue = 0 // getBalanceNumber(cakeAsBigNumber.multipliedBy(stakingTokenPrice), stakingToken.decimals)
+  const stakedAutoDollarValue = getBalanceNumber(cakeAsBigNumber.multipliedBy(stakingTokenPrice), stakingToken.decimals)
 
   const needsApproval = isAutoVault ? !isVaultApproved : !allowance.gt(0) && !isBnbPool
 

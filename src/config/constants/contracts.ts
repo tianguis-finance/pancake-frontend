@@ -48,7 +48,7 @@ export default {
     97: '0x24ec6962dbe874F6B67B5C50857565667fA0854F',
   },
   cakeVault: {
-    56: '0x0000000000000000000000000000000000000000', // morralla vault
+    56: '0x8EE036deB7C675Fb38728cd392Ccae926c0a6827', // morralla vault
     97: '',
   },
   predictions: {

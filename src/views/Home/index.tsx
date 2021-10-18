@@ -19,6 +19,7 @@ import SimonTombola from './components/SimonTombola'
 import { WedgeTopLeft, InnerWedgeWrapper, OuterWedgeWrapper, WedgeTopRight } from './components/WedgeSvgs'
 import UserBanner from './components/UserBanner'
 import TwitterFeedCard from './components/TwitterFeedCard'
+import LaMigra from './components/LaMigra'
 
 const StyledHeroSection = styled(PageSection)`
   padding-top: 0px;
@@ -139,6 +140,7 @@ const Home: React.FC = () => {
             <UserBanner />
           </UserBannerWrapper>
         )}
+        <LaMigra />
         <CakeDataRow />
         <Roadmap />
         <Equipo />

@@ -140,8 +140,8 @@ const Home: React.FC = () => {
             <UserBanner />
           </UserBannerWrapper>
         )}
-        <LaMigra />
-        <CakeDataRow />
+{/*         <LaMigra />
+ */}        <CakeDataRow />
         <Roadmap />
         <Equipo />
         <TwitterFeedCard />

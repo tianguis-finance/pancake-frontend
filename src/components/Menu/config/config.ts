@@ -41,23 +41,6 @@ const config: (t: ContextApi['t']) => ConfigMenuItemsType[] = (t) => [
     ],
   },
   {
-    label: t('V1'),
-    href: 'https://v1.tianguis.finance',
-    type: DropdownMenuItemType.EXTERNAL_LINK,
-    items: [
-      {
-        label: t('La Migra'),
-        href: 'https://lamigra.tianguis.finance',
-        type: DropdownMenuItemType.EXTERNAL_LINK,
-      },
-      {
-        label: t('Tianguis v1'),
-        href: 'https://v1.tianguis.finance',
-        type: DropdownMenuItemType.EXTERNAL_LINK,
-      },
-    ],
-  },
-  {
     label: 'Info',
     href: '/info',
     icon: 'Info',
@@ -66,6 +49,11 @@ const config: (t: ContextApi['t']) => ConfigMenuItemsType[] = (t) => [
       {
         label: t('gráficos'),
         href: '/info',
+      },
+      {
+        label: t('V1'),
+        href: 'https://v1.tianguis.finance',
+        type: DropdownMenuItemType.EXTERNAL_LINK,
       },
     ],
   },

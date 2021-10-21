@@ -90,6 +90,16 @@ const farms: SerializedFarmConfig[] = [
     token: serializedTokens.morralla,
     quoteToken: serializedTokens.ada,
   },
+  {
+    pid: 8,
+    lpSymbol: 'MORRALLA-CAKE LP',
+    lpAddresses: {
+      97: '',
+      56: '0x24E2570953108F56C36A7EE66d70ce740Cfd218e',
+    },
+    token: serializedTokens.morralla,
+    quoteToken: serializedTokens.cake,
+  },
 ]
 
 export default farms

@@ -8,7 +8,8 @@ const config: (t: ContextApi['t']) => ConfigMenuItemsType[] = (t) => [
     label: t('Trade'),
     icon: 'Swap',
     href: '/swap',
-    showItemsOnMobile: false,
+    showItemsOnMobile: true,
+    hideSubNav: true,
     items: [
       {
         label: t('Exchange'),
@@ -24,6 +25,7 @@ const config: (t: ContextApi['t']) => ConfigMenuItemsType[] = (t) => [
     label: t('Earn'),
     href: '/farms',
     icon: 'Earn',
+    hideSubNav: true,
     items: [
       {
         label: t('Puestos'),

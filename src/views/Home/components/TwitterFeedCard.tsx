@@ -5,19 +5,13 @@ import { Timeline } from 'react-twitter-widgets'
 import { Card, CardBody, Heading, Flex } from '@tianguis-finance/uikit'
 import { useTranslation } from 'contexts/Localization'
 
-const StyledCard = styled(Card)`
-  flex: 4;
-  background-color: rgba(2, 5, 11, 0.7);
-  border-radius: 50px;
-  margin-left: auto;
-  margin-right: auto;
-`
 const StyledContainer = styled.div`
   border: 2px solid yellow;
   border-radius: 16px;
   margin-top: 32px;
   padding: 32px;
   box-shadow: 0px 10px 30px 0px #008800;
+  background: linear-gradient(-45deg, #353547, #3c3742, #262130, #231f20);
 `
 const TwitterBody = styled(CardBody)`
   height: 100%;
@@ -28,8 +22,6 @@ const TwitterBody = styled(CardBody)`
 `
 
 const TwitterFeedCard = () => {
-  const { t } = useTranslation()
-
   return (
     <StyledContainer>
       <TwitterBody>

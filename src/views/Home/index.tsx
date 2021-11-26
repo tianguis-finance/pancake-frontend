@@ -134,17 +134,16 @@ const Home: React.FC = () => {
         index={2}
         hasCurvedDivider={false}
       >
-        {/*  <SalesSection {...cakeSectionData} /> */}
+        {/*         <SalesSection {...cakeSectionData} />
+         */}
         {account && (
           <UserBannerWrapper>
             <UserBanner />
           </UserBannerWrapper>
         )}
-{/*         <LaMigra />
- */}        <CakeDataRow />
-        <Roadmap />
-        <Equipo />
+        <CakeDataRow />
         <TwitterFeedCard />
+        <Equipo />
       </PageSection>
       {/*   <PageSection
         innerProps={{ style: HomeSectionContainerStyles }}

@@ -10,6 +10,7 @@ const StyledContainer = styled.div`
   padding: 32px;
   margin-bottom: 32px;
   box-shadow: 0px 10px 30px 0px #008800;
+  background: linear-gradient(-45deg, #353547, #3c3742, #262130, #231f20);
 `
 
 const StyledCard = styled(Box)`

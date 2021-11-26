@@ -23,13 +23,15 @@ interface BackgroundColorProps extends FlexProps {
   getPadding?: () => string
 }
 
+//  background: ${({ background, theme }) => background || theme.colors.background};
+
 const BackgroundColor = styled(Flex)<BackgroundColorProps>`
   position: relative;
   flex-direction: column;
   align-items: center;
   z-index: ${({ index }) => index - 1};
-  background: ${({ background, theme }) => background || theme.colors.background};
   padding: ${({ getPadding }) => getPadding()};
+  background: transparent;
 `
 
 const ChildrenWrapper = styled(Container)`

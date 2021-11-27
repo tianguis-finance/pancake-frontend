@@ -143,7 +143,6 @@ const Home: React.FC = () => {
         )}
         <CakeDataRow />
         <TwitterFeedCard />
-        <Equipo />
       </PageSection>
       {/*   <PageSection
         innerProps={{ style: HomeSectionContainerStyles }}

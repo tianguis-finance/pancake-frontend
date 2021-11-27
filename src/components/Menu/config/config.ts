@@ -44,11 +44,11 @@ const config: (t: ContextApi['t']) => ConfigMenuItemsType[] = (t) => [
   },
   {
     label: 'Mas...',
-    href: '/info',
+    href: '',
     icon: 'Info',
     hideSubNav: true,
     items: [
-     /*  {
+      /*  {
         label: t('gráficos'),
         href: '/info',
       }, */

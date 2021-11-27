@@ -33,7 +33,7 @@
     "@ethersproject/experimental": "^5.0.1",
     "@pancakeswap/sdk": "^2.4.0",
     "@reduxjs/toolkit": "^1.5.0",
-    "@tianguis-finance/uikit": "0.0.9",
+    "@tianguis-finance/uikit": "0.0.12",
     "@types/multicodec": "^1.0.0",
     "@types/node": "^13.13.5",
     "@types/qs": "^6.9.6",

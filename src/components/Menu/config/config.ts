@@ -43,15 +43,15 @@ const config: (t: ContextApi['t']) => ConfigMenuItemsType[] = (t) => [
     ],
   },
   {
-    label: 'Info',
+    label: 'Mas...',
     href: '/info',
     icon: 'Info',
     hideSubNav: true,
     items: [
-      {
+     /*  {
         label: t('gráficos'),
         href: '/info',
-      },
+      }, */
       {
         label: t('V1'),
         href: 'https://v1.tianguis.finance',

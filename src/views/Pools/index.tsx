@@ -41,11 +41,13 @@ const CardLayout = styled(FlexLayout)`
 `
 
 const PoolControls = styled.div`
+  border: 2px solid yellow;
+  border-radius: 16px;
   display: flex;
   width: 100%;
   align-items: center;
   position: relative;
-
+  background: linear-gradient(-45deg, #353547, #3c3742, #262130, #231f20);
   justify-content: space-between;
   flex-direction: column;
   margin-bottom: 32px;
@@ -306,6 +308,9 @@ const Pools: React.FC = () => {
             </LabelWrapper>
           </FilterContainer>
         </PoolControls>
+        <div>
+          <br />
+        </div>
         {showFinishedPools && (
           <Text fontSize="20px" color="failure" pb="32px">
             {t('These pools are no longer distributing rewards. Please unstake your tokens.')}

@@ -20,7 +20,10 @@ interface PoolRowProps {
 }
 
 const StyledRow = styled.div`
-  background-color: transparent;
+  background: linear-gradient(-45deg, #353547, #3c3742, #262130, #231f20);
+  border-radius: 16px;
+  border: 2px solid yellow;
+  margin-bottom: 2px;
   display: flex;
   cursor: pointer;
 `

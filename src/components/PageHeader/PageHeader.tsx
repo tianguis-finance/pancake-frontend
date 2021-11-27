@@ -10,7 +10,7 @@ const Outer = styled(Box)<{ background?: string }>`
 `
 // paddnig top era 32
 const Inner = styled(Container)`
-  padding-top: 0px;
+  padding-top: 64px;
   padding-bottom: 32px;
 `
 

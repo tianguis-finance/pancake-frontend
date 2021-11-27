@@ -31,11 +31,14 @@ import ToggleView from './components/ToggleView/ToggleView'
 import { DesktopColumnSchema } from './components/types'
 // import UserBanner from './components/UserBanner'
 
-const ControlContainer = styled(Card)`
+const ControlContainer = styled.div`
   display: flex;
+  border: 2px solid yellow;
+  border-radius: 16px;
   width: 100%;
   align-items: center;
   position: relative;
+  background: linear-gradient(-45deg, #353547, #3c3742, #262130, #231f20);
 
   justify-content: space-between;
   flex-direction: column;
@@ -392,24 +395,8 @@ const Farms: React.FC = () => {
             textAlign: 'center',
           }}
         >
-          {t('Farms')}
+          {t('Puestos')}
         </h1>
-        {/*    {account && (
-          <UserBannerWrapper>
-            <UserBanner />
-          </UserBannerWrapper>
-        )} */}
-        {/*    <Heading scale="lg" color="text">
-          {t('Stake LP tokens to earn.')}
-        </Heading>
-        <NavLink exact activeClassName="active" to="/farms/auction" id="lottery-pot-banner">
-          <Button p="0" variant="text">
-            <Text color="primary" bold fontSize="16px" mr="4px">
-              {t('Community Auctions')}
-            </Text>
-            <ArrowForwardIcon color="primary" />
-          </Button>
-        </NavLink> */}
       </PageHeader>
       <Page>
         <ControlContainer>

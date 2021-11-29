@@ -3181,10 +3181,10 @@
     event-iterator "^2.0.0"
     loglevel "^1.7.0"
 
-"@tianguis-finance/uikit@0.0.17":
-  version "0.0.17"
-  resolved "https://registry.yarnpkg.com/@tianguis-finance/uikit/-/uikit-0.0.17.tgz#1f2b52bb3e83f2fd07e375aad56405851a52b988"
-  integrity sha512-2cR+UDSQhNIZib+rgorCb2wQVGQWgAJ3kAEGG1RuH2+hgV19l5bDA+7wd5nS6QWnUUuqwug9WtO8mP8dAxEPxQ==
+"@tianguis-finance/uikit@0.0.18":
+  version "0.0.18"
+  resolved "https://registry.yarnpkg.com/@tianguis-finance/uikit/-/uikit-0.0.18.tgz#d2211fc3cd83bc076903257343fb1d84778a26c0"
+  integrity sha512-6QT0GkUBwU/ZnPR7Jp3Eqlbyz80r50BERwNQMjvDsvr8g1Rl3PipI2ZipLNYQ9rZQtdyD6iBkQX3IwwUdQ3B1g==
   dependencies:
     "@popperjs/core" "^2.9.2"
     "@types/lodash" "^4.14.168"

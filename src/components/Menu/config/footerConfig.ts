@@ -31,7 +31,7 @@ export const footerLinks: (t: ContextApi['t']) => FooterLinkType[] = (t) => [
       }, */
     ],
   },
- /*  {
+  /*  {
     label: 'Socorro!',
     items: [
       {
@@ -55,11 +55,11 @@ export const footerLinks: (t: ContextApi['t']) => FooterLinkType[] = (t) => [
         label: 'Github',
         href: 'https://github.com/tianguis-finance',
       },
-      /* {
-        label: 'Documentation',
-        href: 'https://t.me/tianguisfinance',
-      },
       {
+        label: 'Documentation',
+        href: 'https://docs.tianguis.finance',
+      },
+      /* {
         label: 'Bug Bounty',
         href: 'https://t.me/tianguisfinance',
       },

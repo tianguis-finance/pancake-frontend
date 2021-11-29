@@ -51,7 +51,12 @@ const config: (t: ContextApi['t']) => ConfigMenuItemsType[] = (t) => [
       /*  {
         label: t('gráficos'),
         href: '/info',
-      }, */
+      },  */
+      {
+        label: t('Documentation'),
+        href: 'https://docs.tianguis.finance',
+        type: DropdownMenuItemType.EXTERNAL_LINK,
+      },
       {
         label: t('V1'),
         href: 'https://v1.tianguis.finance',

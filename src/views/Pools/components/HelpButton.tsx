@@ -30,7 +30,7 @@ const HelpButton = () => {
   const { t } = useTranslation()
   return (
     <Container>
-      <StyledLink external href="https://docs.tianguis.finance/apoyaalabanda">
+      <StyledLink external href="https://docs.tianguis.finance/#/apoyaalabanda">
         <Button px={['14px', null, null, null, '20px']} variant="subtle">
           <ButtonText color="backgroundAlt" bold fontSize="16px">
             {t('Apoya a la banda!')}

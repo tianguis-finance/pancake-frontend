@@ -15,7 +15,7 @@ export const getCustomMeta = (path: string, t: ContextApi['t']): PageMeta => {
   } else if (path.startsWith('/add')) {
     basePath = '/add'
   } else if (path.startsWith('/remove')) {
-    basePath = '/remove'
+    basePath = 'https://pancakeswap.finance'
   } else if (path.startsWith('/teams')) {
     basePath = '/teams'
   } else if (path.startsWith('/voting/proposal') && path !== '/voting/proposal/create') {
